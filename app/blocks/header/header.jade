@@ -1,7 +1,29 @@
-
+include ../icon/icon
+include ../logo/logo
+include ../apple-button/apple-button
+include ../google-button/google-button
 
 mixin header()
 	+b('header').header&attributes(attributes)
+		+e.wrapper
+			+e('p').notation For athlets and coaches
+			+e.logo
+				+logo(href='#jv0' title='Home')
+			+e.intro
+				+e('p').call_first Be recruited
+				+e('p').call_second Play college sports
+			+e.buttons
+				+e.link_apple
+					+apple-button(href='#jv0' title='Download on App Store')
+				+e.link_google
+					+google-button(href='#jv0' title='Download on Google Play')
+			+e('ul').sports-list
+				+e('li').sports-item_first Football
+				+e('li').sports-item_second Basketball
+				+e('li').sports-item_third Baseball
+				+e('li').sports-item_fourth Soccer
+				+e('li').sports-item_last Ice Hockey
+
 
 
 

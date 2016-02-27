@@ -1,2 +1,231 @@
+.header
+	position relative
+	padding-top em(39)
+	min-height em(568)
+	font-family $proximanova
+	text-align center
+	background-color #14163b
+	background-image url('../images/header_sm.jpg')
+	background-repeat no-repeat
+	background-position center 0
+	background-size cover
+
+	+between(320px, 768px)
+		background-image url('../images/header_md.jpg')
+
+	+between(480px, 768px)
+		font-size rem(20)
+
+	+above(768px)
+		padding-top em(52)
+		min-height em(960)
+		text-align left
+		background-image url('../images/header_lg.jpg')
+
+	&__wrapper
+		width auto
+
+		+above(1560px)
+			padding-x 7px
+			wrapper(1560px)
+
+	&__notation
+		margin-top em(10, 14)
+		margin-right prc(20/768)
+		display none
+		float right
+		font-size em(14)
+		font-weight 300
+		line-height (14/14)
+		text-transform uppercase
+		letter-spacing em(.6, 14)
+		color #fff
+
+		+above(768px)
+			display block
+
+		+above(1560px)
+			margin-top em(12, 14)
+			margin-right prc(9/1560)
+
+	&__logo
+		margin-bottom em(131)
+		display inline-block
+
+		+above(768px)
+			margin-bottom em(178)
+			margin-left prc(20/768)
+
+		+above(1560px)
+			margin-bottom em(299)
+			margin-left prc(6/1560)
+
+	&__intro
+		margin-x auto
+		margin-bottom em(109)
+		width em(302)
+		text-align right
+
+		+above(768px)
+			margin-bottom em(156, 32)
+			width em(597, 32)
+			font-size rem(32)
+
+		+above(1280px)
+			margin-bottom em(156, 78)
+			font-size rem(40)
+
+		+above(1560px)
+			margin-bottom em(2)
+			width auto
+			font-size rem(16px)
+			clearfix()
+
+	&__call
+		font-size em(32)
+		font-weight 700
+		line-height em(38, 32)
+		text-align left
+		letter-spacing em(1.6, 32)
+		text-transform uppercase
+		color #fff
+
+		+above(1560px)
+			font-size em(90)
+			line-height (90/90)
+
+		&_first
+			margin-bottom em(14, 32)
+
+			+above(768px)
+				margin-bottom em(2, 64)
+
+		&_second
+			padding-left prc(59/320)
+
+			+above(768px)
+				letter-spacing em(2.7, 64)
+
+			+above(1560px)
+				margin-right prc(4/1560)
+				float right
+				letter-spacing em(4.2, 90)
+
+	&__buttons
+		text-align center
+
+		+above(768px)
+			position absolute
+			left 50%
+			bottom em(92)
+			width 655px
+			transform translateX(-50%)
+
+		+above(1560px)
+			bottom em(110)
+			width 676px
+			text-align left
+
+	&__link
+		display inline-block
+		vertical-align top
+		transition opacity .2s
+
+		&:hover
+			opacity .85
+
+		&_apple
+			margin-right prc(3/320)
+
+			+above(768px)
+				margin-right 25px
+
+			+above(1560px)
+				margin-right 44px
+
+	&__sports-list
+		margin-x auto
+		margin-top em(45)
+		width em(250)
+		clearfix()
+
+		+above(768px)
+			width em(668)
+			text-align justify
+
+		+above(1560px)
+			margin-top 0
+			margin-right prc(11/1560)
+			width auto
+			text-align right
+
+		// justify content inside block(fix)
+		&::before
+			content ''
+
+			+above(768px)
+				display block
+				width 100%
+
+		&::after
+			content ''
+
+			+above(768px)
+				display inline-block
+				width 100%
+
+	&__sports-item
+		margin-bottom em(8, 12)
+		margin-left em(32, 12)
+		float left
+		font-size em(12)
+		font-weight 300
+		text-transform uppercase
+		color #9071ea
+
+		+above(768px)
+			margin 0
+			display inline-block
+			float none
+			font-size em(16)
+			font-weight 300
+			line-height (34/16)
+			vertical-align top
+			letter-spacing em(.7, 16)
+
+		+above(1560px)
+			margin-left em(38, 14)
+			font-size em(14)
+
+		&_first
+			margin-left 0
+
+		&_second
+		&_third
+
+			+above(1560px)
+				margin-left em(49, 14)
+
+		&_fourth
+			margin-left em(42, 12)
+			clear left
+
+			+above(768px)
+				margin 0
+				clear none
+
+			+above(1560px)
+				margin-left em(43, 14)
+
+		&_last
+			margin-left em(54, 12)
+			word-spacing em(3, 12)
+
+			+above(768px)
+				margin 0
+
+			+above(1560px)
+				margin-left em(38, 14)
+				word-spacing 0
 
 
