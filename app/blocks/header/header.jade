@@ -8,15 +8,15 @@ mixin header()
 		+e.wrapper
 			+e('p').notation For athlets and coaches
 			+e.logo
-				+logo(href='#jv0' title='Home')
+				+logo(href='#{jv0}' title='Home')
 			+e.intro
 				+e('p').call_first Be recruited
 				+e('p').call_second Play college sports
 			+e.buttons
 				+e.link_apple
-					+apple-button(href='#jv0' title='Download on App Store')
+					+apple-button(href='#{jv0}' title='Download on App Store')
 				+e.link_google
-					+google-button(href='#jv0' title='Download on Google Play')
+					+google-button(href='#{jv0}' title='Download on Google Play')
 			+e('ul').sports-list
 				+e('li').sports-item_first Football
 				+e('li').sports-item_second Basketball
