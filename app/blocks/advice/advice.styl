@@ -1,0 +1,123 @@
+.advice
+	padding-top em(78)
+	font-family $proximanova
+	color #000
+
+	+above(480px)
+		padding-top 0
+
+	&__item
+		margin-bottom em(20)
+
+		+above(480px)
+			margin-bottom 0
+
+		&_pos_1
+			+above(480px)
+				padding-top em(38)
+				padding-bottom em(39)
+				background-color #fff
+
+			+above(1280px)
+				padding-top em(74)
+				padding-bottom em(55)
+
+		&_pos_2
+			+above(480px)
+				padding-top em(38)
+				padding-bottom em(32)
+				background-color #f5f4f9
+
+			+above(1280px)
+				padding-top em(62)
+				padding-bottom em(53)
+
+		&_pos_3
+
+			+above(480px)
+				padding-top em(38)
+				padding-bottom em(29)
+				background-color #5e42b0
+
+				& .advice__number::after
+					background-color #efefef
+
+				& .advice__text
+					color #fff
+
+			+above(1280px)
+				padding-top em(90)
+				padding-bottom em(96)
+
+	&__item-wrapper
+		padding-right em(15)
+		padding-left em(19)
+		width auto
+
+		+above(480px)
+			padding-left prc(291/768)
+
+		+above(1280px)
+			padding-left em(828)
+			wrapper(1560px)
+
+	&__item-header
+		margin-bottom em(20)
+
+		+above(480px)
+			margin-bottom em(19)
+
+		+above(1280px)
+			margin-bottom em(16)
+
+	&__number
+		position relative
+		margin-right em(7, 14)
+		padding-top em(4, 14)
+		display inline-block
+		font-size em(14)
+		font-weight 700
+		line-height (14/14)
+		vertical-align top
+		text-transform uppercase
+
+		+above(480px)
+			padding-top em(2, 18)
+			font-size em(18)
+
+		&::after
+			position absolute
+			left 0
+			bottom em(-5, 14)
+			width em(17, 14)
+			height em(4, 14)
+			content ''
+			background-color #5e42b0
+			border-radius em(2, 14)
+
+	&__title
+		display inline
+		font-size em(28)
+		font-weight 700
+		line-height (28/28)
+		text-transform uppercase
+		letter-spacing em(1.3, 28)
+		color #c1c1c1
+
+		+above(480px)
+			font-size em(36)
+
+	&__text
+		font-size em(15)
+		font-weight 400
+		line-height (18/15)
+		letter-spacing em(.7, 15)
+
+		+above(480px)
+			font-size em(18)
+			font-weight 400
+			line-height (28/18)
+
+		+above(1280px)
+			font-size em(20)
+			line-height (30/20)
