@@ -1,0 +1,42 @@
+{
+	"athlets": [
+		{
+			"pos": "1",
+			"number": "01",
+			"title": "Connection",
+			"text": "Connect with coaches directly, you can ping coaches to view profile."
+		},
+		{
+			"pos": "2",
+			"number": "02",
+			"title": "Collaboration",
+			"text": "Work with other student athletes to increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1."
+		},
+		{
+			"pos": "3",
+			"number": "03",
+			"title": "Growth",
+			"text": "Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc"
+		}
+	],
+	"players": [
+		{
+			"pos": "4",
+			"number": "01",
+			"title": "Connection",
+			"text": "Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1."
+		},
+		{
+			"pos": "5",
+			"number": "02",
+			"title": "Collaboration",
+			"text": "Work with recruiter to increase your chances of finding talented athlete."
+		},
+		{
+			"pos": "6",
+			"number": "03",
+			"title": "Growth",
+			"text": "Save your time, recruit proper athlets for your team."
+		}
+	]
+}
