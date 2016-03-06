@@ -1,0 +1,212 @@
+.call
+	position relative
+	font-family $proximanova
+	background-color #fff
+
+	+above(1024px)
+		clearfix()
+
+	&__column
+		position relative
+
+		+above(1024px)
+			position static
+			float left
+			width 50%
+
+		&_second
+			padding-bottom em(51)
+
+			+between(480px, 767px)
+				font-size rem(20.5)
+
+		&_pos_01
+			padding-top em(29)
+
+			+above(768px)
+				padding-top em(69)
+				padding-bottom em(63)
+
+			+above(1024px)
+				padding-bottom 0
+
+			+above(1560px)
+				padding-top prc(256/1920)
+
+
+		&_pos_02
+			padding-top em(32)
+
+			+above(768px)
+				padding-top em(59)
+				padding-bottom em(70)
+
+			+above(1024px)
+				padding-bottom 0
+
+			+above(1560px)
+				padding-top prc(256/1920)
+
+		&_pos_03
+			padding-top em(32)
+			padding-bottom em(42)
+
+			+above(768px)
+				padding-top em(60)
+				padding-bottom em(76)
+
+			+above(1024px)
+				padding-bottom 0
+
+			+above(1560px)
+				padding-top prc(256/1920)
+
+	&__img
+		display block
+		width 100%
+		height auto
+
+
+	&__number-container
+		position absolute
+		top em(-58)
+		left em(19)
+		padding-top em(25)
+		width em(70)
+		height em(70)
+		text-align center
+		background-color #5e42b0
+
+		+above(768px)
+			top em(-80)
+			left em(33)
+			padding-top em(41)
+			width em(116)
+			height em(116)
+
+		+above(1024px)
+			top 50%
+			left 50%
+			transform translate(-50%, -50%)
+
+		+above(1560px)
+			top 29%
+			padding-top em(60)
+			width 168px
+			height 155px
+			transform translate(-50%, 0)
+
+	&__number
+		position relative
+		display inline-block
+		font-size em(14)
+		font-weight 700
+		text-transform uppercase
+		color #f5f6f7
+
+		+above(768px)
+			font-size em(24)
+
+		&::after
+			position absolute
+			top em(16, 14)
+			left 0
+			width 110%
+			height em(4, 14)
+			content ''
+			background-color #fff
+			border-radius em(2, 14)
+			opacity .3
+
+			+above(768px)
+				top em(29, 24)
+				left em(2, 24)
+				width em(22, 24)
+				height em(5, 24)
+
+	&__body
+		position relative
+		margin-x prc(18/320)
+		padding-bottom em(27)
+
+		+above(768px)
+			margin-x prc(28/768)
+			padding-bottom em(36)
+
+		+between(1024px, 1279px)
+			font-size rem(13)
+
+		+between(1024px, 1559px)
+			margin-x prc(150/960)
+
+		+between(1024px, 1919px)
+			padding-bottom em(50, 13)
+
+		+above(1560px)
+			margin-x prc(122/960)
+
+		+above(1920px)
+			padding-bottom prc(118/730)
+
+		&::after
+			position absolute
+			left em(1)
+			bottom 0
+			width 22px
+			height 5px
+			content ''
+			background-color #5e3db3
+			border-radius 2px
+
+			+above(768px)
+				left em(5)
+
+	&__title
+		margin-bottom em(11, 28)
+		font-size em(28)
+		font-weight 700
+		line-height (34/28)
+		letter-spacing em(1.2, 28)
+		text-transform uppercase
+		color #e7e7e7
+
+		+above(768px)
+			margin-bottom em(4, 90)
+			font-size em(90)
+			letter-spacing em(-.4, 90)
+			color #c1c1c1
+			opacity .4
+
+		+above(1024px)
+			margin-bottom em(87, 90)
+			line-height (72/90)
+
+		+above(1560px)
+			margin-bottom em(106, 90)
+
+	&__desc
+		font-size em(16)
+		font-weight 400
+		line-height (20/16)
+		letter-spacing em(.8, 16)
+		color #000
+
+		+above(768px)
+			margin-left prc(5/732)
+			font-size em(24)
+			line-height (28/24)
+
+	// модификатор влияет на расположение колонок
+	&_rtl &__column
+
+		+above(1024px)
+			float right
+
+	&_rtl &__body
+
+		+above(1024px)
+			margin-left prc(188/960)
+
+
+
+

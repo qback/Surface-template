@@ -1,0 +1,16 @@
+mixin call(data)
+	+b('article').call&attributes(attributes)(class='call_#{data.mod}')
+		+e.column_first
+			+e('figure').figure
+				+e('picture').picture
+					source(media='(min-width: 1280px)' srcset='#{data.imgLg}')
+					source(media='(min-width: 769px)' srcset='#{data.imgBg}')
+					source(media='(min-width: 321px)' srcset='#{data.imgMd}')
+					+e('img').img(src='#{data.imgSm}' alt='#{data.alt}' title='#{data.title}')
+		+e.column_second(class='call__column_pos_#{data.number}')
+			+e.number-container
+					+e('span').number #{data.number}
+			+e.body
+				+e('h2').title #{data.title}
+				+e('p').desc #{data.text}
+
