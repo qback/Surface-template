@@ -33,10 +33,9 @@
 				padding-bottom em(53)
 
 		&_pos_3
-
 			+above(480px)
 				padding-top em(38)
-				padding-bottom em(29)
+				padding-bottom em(30)
 				background-color #5e42b0
 
 				& .advice__number::after
@@ -49,31 +48,82 @@
 				padding-top em(90)
 				padding-bottom em(96)
 
+		&_pos_4
+			+above(480px)
+				padding-top em(38)
+				padding-bottom em(10)
+				background-color #fff
+
+			+above(1280px)
+				padding-top em(72)
+				padding-bottom em(66)
+
+		&_pos_5
+			+above(480px)
+				padding-top em(60)
+				padding-bottom em(67)
+				background-color #f5f4f9
+
+			+above(1280px)
+				padding-bottom em(75)
+
+		&_pos_6
+			+above(480px)
+				padding-top em(48)
+				padding-bottom em(47)
+				background-color #090c35
+
+				& .advice__number
+					color #5e42b0
+
+					&::after
+						background-color #efefef
+
+				& .advice__text
+					color #fff
+
+			+above(1280px)
+				padding-top em(95)
+				padding-bottom em(91)
+
+
 	&__item-wrapper
-		padding-right em(15)
-		padding-left em(19)
-		width auto
 
-		+above(480px)
-			padding-left prc(291/768)
+		+below(480px)
+			padding-right em(15)
+			padding-left em(19)
 
-		+above(1280px)
-			padding-left em(828)
+		+above(1560px)
 			wrapper(1560px)
 
 	&__item-header
 		margin-bottom em(20)
+		position relative
 
 		+above(480px)
-			margin-bottom em(19)
+			margin-left prc(291/768)
+			margin-bottom em(18)
+
+		+above(1024px)
+			margin-left prc(828/1560)
 
 		+above(1280px)
 			margin-bottom em(16)
 
+		&_players
+
+			+above(480px)
+				margin-right prc(291/768)
+				margin-left prc(33/768)
+
+			+above(1024px)
+				margin-left prc(144/1560)
+				margin-right prc(780/1560)
+
 	&__number
-		position relative
-		margin-right em(7, 14)
-		padding-top em(4, 14)
+		position absolute
+		top em(4, 14)
+		left 0
 		display inline-block
 		font-size em(14)
 		font-weight 700
@@ -82,7 +132,7 @@
 		text-transform uppercase
 
 		+above(480px)
-			padding-top em(2, 18)
+			top em(2, 18)
 			font-size em(18)
 
 		&::after
@@ -95,7 +145,11 @@
 			background-color #5e42b0
 			border-radius em(2, 14)
 
+			+above(480px)
+				bottom em(-8, 18)
+
 	&__title
+		margin-left em(30, 36)
 		display inline
 		font-size em(28)
 		font-weight 700
@@ -108,19 +162,36 @@
 			font-size em(36)
 
 	&__text
+		position relative
+		z-index 25
 		font-size em(15)
 		font-weight 400
 		line-height (18/15)
 		letter-spacing em(.7, 15)
 
 		+above(480px)
+			margin-left prc(291/768)
+			margin-right prc(33/768)
 			font-size em(18)
 			font-weight 400
 			line-height (28/18)
 
+		+above(1024px)
+			margin-left prc(828/1560)
+
 		+above(1280px)
 			font-size em(20)
 			line-height (30/20)
+
+		&_players
+
+			+above(480px)
+				margin-right prc(291/768)
+				margin-left prc(33/768)
+
+			+above(1024px)
+				margin-left prc(144/1560)
+				margin-right prc(780/1560)
 
 	// стили для переключателей slick слайдера
 	.slick-dots

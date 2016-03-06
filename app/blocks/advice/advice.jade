@@ -5,15 +5,7 @@ mixin advice(data, sectionName)
 			each item in data[sectionName]
 				+e('article').item(class='advice__item_pos_#{item.pos}')
 					+e.item-wrapper
-						+e('header').item-header
+						+e('header').item-header(class='advice__item-header_#{sectionName}')
 							+e('span').number #{item.number}
 							+e('h3').title #{item.title}
-						+e('p').text #{item.text}
-			//- +e('li').item
-			//- 	+e('header').item-header
-			//- 		+e('span').number 02
-			//- 		+e('h3').title Collaboration
-			//- 	+e('p').text
-			//- 		| Work with other student athletes to increase visability. When you
-			//- 		| share and like other players videos it will increase your visability
-			//- 		| as a player. This is the team work aspect to Surface 1.
+						+e('p').text(class='advice__text_#{sectionName}') #{item.text}
