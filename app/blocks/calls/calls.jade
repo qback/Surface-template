@@ -1,0 +1,8 @@
+include ../call/call
+
+mixin calls(data)
+	+b.calls&attributes(attributes)
+		each item in data
+			+e.item
+				+call(item)
+		hr
