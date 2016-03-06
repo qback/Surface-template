@@ -1,0 +1,9 @@
+include ../advice/advice
+
+mixin players()
+	+b('section').players&attributes(attributes)
+		+e.bg-wrapper
+		+e.title-wrapper
+			+e('h2').title Players
+		+e.list
+			+advice(getData('advice.json'), 'players')(id='sliderPlayers')
