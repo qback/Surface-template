@@ -1,0 +1,35 @@
+[
+	{
+		"number": "01",
+		"title": "Be active",
+		"text": "Post videos with your skills, Like and follow others to be more popular.",
+		"imgSm": "assets/images/active_sm.jpg",
+		"imgMd": "assets/images/active_md.jpg",
+		"imgLg": "assets/images/active_lg.jpg",
+		"imgBg": "assets/images/active_bg.jpg",
+		"alt": "Call image",
+		"mod": "ltr"
+	},
+	{
+		"number": "02",
+		"title": "Find contact",
+		"text": "Contact others to find right coach or athlete you are looking for.",
+		"imgSm": "assets/images/contact_sm.jpg",
+		"imgMd": "assets/images/contact_md.jpg",
+		"imgLg": "assets/images/contact_lg.jpg",
+		"imgBg": "assets/images/contact_bg.jpg",
+		"alt": "Call image",
+		"mod": "rtl"
+	},
+	{
+		"number": "03",
+		"title": "Work it",
+		"text": "Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this a enjoyable experience.",
+		"imgSm": "assets/images/work_sm.jpg",
+		"imgMd": "assets/images/work_md.jpg",
+		"imgLg": "assets/images/work_lg.jpg",
+		"imgBg": "assets/images/work_bg.jpg",
+		"alt": "Call image",
+		"mod":"ltr"
+	}
+]
