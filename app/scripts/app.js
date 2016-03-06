@@ -19,9 +19,20 @@ $(() => {
 				speed: 300,
 				slidesToShow: 1
 			});
+
+			$('#sliderPlayers').slick({
+				arrows: false,
+				dots: true,
+				infinite: true,
+				autoplay: true,
+				autoplaySpeed: 6000,
+				speed: 300,
+				slidesToShow: 1
+			});
 		},
 		unmatch() {
 			$('#slider').slick('unslick');
+			$('#sliderPlayers').slick('unslick');
 		}
 
 	});
