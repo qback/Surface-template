@@ -20,9 +20,9 @@
 
 		&::after
 			position absolute
+			z-index 50
 			top em(80)
 			left 50%
-			z-index 50
 			width 100%
 			max-width 1560px
 			height em(281)
@@ -35,23 +35,23 @@
 			+above(480px)
 				top em(74)
 				left 0
-				height 100%
 				width prc(335/768)
+				height 100%
 				background-image url('../images/football-player_md.png')
 				background-position 0 0
 				transform none
 
 			+between(480px, 767px)
-				background-size 70%
 				background-position 0 50%
+				background-size 70%
 
 			+above(1024px)
 				top 0
 				left prc(122/1560)
 				width prc(695/1560)
+				height 110%
 				background-image url('../images/football-player_lg.png')
 				background-size 100%
-				height 110%
 
 			+above(1280px)
 				top em(40)
