@@ -52,10 +52,10 @@
 			border-radius em(30)
 
 		+above(1560px)
-			display inline-block
+			margin-right prc(27/1560)
 			margin-bottom 0
 			margin-left prc(324/1560)
-			margin-right prc(27/1560)
+			display inline-block
 
 	&__text
 		margin-bottom em(69)
@@ -84,10 +84,10 @@
 			line-height (60/80)
 
 		+above(1560px)
+			margin-bottom 0
 			font-size em(90)
 			line-height (60/90)
 			letter-spacing em(3.8, 90)
-			margin-bottom 0
 
 	&__subtitle
 		font-size em(15)
@@ -128,9 +128,9 @@
 		position absolute
 		left 0
 		bottom 0
+		overflow hidden
 		width 100%
 		height 50px
-		overflow hidden
 		background-color alpha(#0a0e34, .6)
 
 		+above(768px)
@@ -152,9 +152,9 @@
 			margin-top 78px
 
 	&__logo
-		display none
 		margin-top 77px
 		margin-left prc(50/1920)
+		display none
 		float left
 		size 172px 30px
 
@@ -162,15 +162,15 @@
 			display block
 
 	&__contacts
-		display none
-		float right
 		margin-top 81px
 		margin-right prc(60/1920)
-		color #fff
+		display none
+		float right
 		font-family $proximanova
 		font-size 20px
 		font-weight 400
 		letter-spacing .9px
+		color #fff
 
 		+above(1560px)
 			display block
