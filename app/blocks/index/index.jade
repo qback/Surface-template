@@ -1,7 +1,11 @@
 include ../athlets/athlets
+include ../players/players
+include ../calls/calls
 
 mixin index()
 	+b('main').index
 		+athlets()
+		+players()
+		+calls(getData('calls.json'))
 
 
