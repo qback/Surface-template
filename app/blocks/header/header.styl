@@ -10,16 +10,18 @@
 	background-position center 0
 	background-size cover
 
-	+between(320px, 768px)
+	+between(321px, 768px)
 		background-image url('../images/header_md.jpg')
 
-	+between(480px, 768px)
+	+between(480px, 767px)
 		font-size rem(20)
 
 	+above(768px)
 		padding-top em(52)
 		min-height em(960)
 		text-align left
+
+	+above(769px)
 		background-image url('../images/header_lg.jpg')
 
 	&__wrapper
@@ -51,10 +53,12 @@
 	&__logo
 		margin-bottom em(131)
 		display inline-block
+		size em(137) em(24)
 
 		+above(768px)
 			margin-bottom em(178)
 			margin-left prc(20/768)
+			size em(189) em(33)
 
 		+above(1560px)
 			margin-bottom em(299)
