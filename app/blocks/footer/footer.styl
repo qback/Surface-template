@@ -1,0 +1,183 @@
+.footer
+	position relative
+	padding-top em(97)
+	min-height em(568)
+	font-family $proximanova
+	text-align center
+	background-color #14163b
+	background-image url('../images/footer_sm.jpg')
+	background-repeat no-repeat
+	background-position center 0
+	background-size cover
+
+	+between(321px, 768px)
+		background-image url('../images/footer_md.jpg')
+
+	+between(480px, 767px)
+		font-size rem(20)
+
+	+above(768px)
+		padding-top em(128)
+		min-height em(956)
+
+	+above(769px)
+		background-image url('../images/footer_lg.jpg')
+
+	+above(1560px)
+		padding-top em(229)
+
+	&__wrapper
+		width auto
+
+		+above(1560px)
+			wrapper(1560px)
+			text-align left
+
+	&__app-logo
+		position relative
+		margin-x auto
+		margin-bottom em(53)
+		display block
+		background-image linear-gradient(to top, #50329c 0, #5e3db3 51%, #7751db 100%)
+		border-radius em(15)
+		transition opacity .2s
+		size em(73) em(78)
+
+		&:hover
+			opacity .85
+
+		+above(768px)
+			margin-bottom em(83)
+			size em(130) em(137)
+			border-radius em(30)
+
+		+above(1560px)
+			display inline-block
+			margin-bottom 0
+			margin-left prc(324/1560)
+			margin-right prc(27/1560)
+
+	&__text
+		margin-bottom em(69)
+
+		+above(768px)
+			margin-bottom em(180)
+
+		+above(1560px)
+			margin-bottom em(146)
+			padding-top em(22)
+			display inline-block
+			text-align left
+			vertical-align top
+
+	&__title
+		margin-bottom em(6, 34)
+		font-size em(34)
+		font-weight 700
+		letter-spacing em(1.6, 34)
+		text-transform uppercase
+		color #fff
+
+		+above(768px)
+			margin-bottom em(10, 80)
+			font-size em(80)
+			line-height (60/80)
+
+		+above(1560px)
+			font-size em(90)
+			line-height (60/90)
+			letter-spacing em(3.8, 90)
+			margin-bottom 0
+
+	&__subtitle
+		font-size em(15)
+		font-weight 700
+		letter-spacing em(.2, 15)
+		text-transform uppercase
+		color #9b8ec1
+
+		+above(768px)
+			font-size em(36)
+			line-height (60/36)
+			letter-spacing em(-.2, 36)
+
+		+above(1560px)
+			margin-bottom 0
+
+	&__buttons
+		text-align center
+
+	&__link
+		display inline-block
+		vertical-align top
+		transition opacity .2s
+
+		&:hover
+			opacity .85
+
+		&_apple
+			margin-right prc(3/320)
+
+			+above(768px)
+				margin-right 25px
+
+			+above(1560px)
+				margin-right 44px
+
+	&__info
+		position absolute
+		left 0
+		bottom 0
+		width 100%
+		height 50px
+		overflow hidden
+		background-color alpha(#0a0e34, .6)
+
+		+above(768px)
+			height 95px
+
+		+above(1560px)
+			height 171px
+
+	&__social
+		margin-x auto
+		margin-top 20px
+		width 125px
+
+		+above(768px)
+			margin-top 38px
+			width 144px
+
+		+above(1560px)
+			margin-top 78px
+
+	&__logo
+		display none
+		margin-top 77px
+		margin-left prc(50/1920)
+		float left
+		size 172px 30px
+
+		+above(1560px)
+			display block
+
+	&__contacts
+		display none
+		float right
+		margin-top 81px
+		margin-right prc(60/1920)
+		color #fff
+		font-family $proximanova
+		font-size 20px
+		font-weight 400
+		letter-spacing .9px
+
+		+above(1560px)
+			display block
+
+		& a
+			text-decoration none
+			color inherit
+
+
+

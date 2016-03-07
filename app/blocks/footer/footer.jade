@@ -1,7 +1,31 @@
-
+include ../app-logo/app-logo
+include ../logo/logo
+include ../apple-button/apple-button
+include ../google-button/google-button
+include ../social/social
 
 mixin footer()
 	+b('footer').footer&attributes(attributes)
+		+e.wrapper
+			+e('a').app-logo(href='#{jv0}' title='Download App')
+				+app-logo
+			+e.text
+				+e('h1').title Download app
+				+e('p').subtitle Show everyone what you can do!
+			+e.buttons
+				+e.link_apple
+					+apple-button(href='#{jv0}' title='Download on App Store')
+				+e.link_google
+					+google-button(href='#{jv0}' title='Download on Google Play')
+		+e.info
+			+e.logo
+				+logo(href='#{jv0}' title='Home')
+			+e('span').contacts
+				| #[a(href='#{jv0}' title='Contact Us') Contact Us]
+				| &nbsp;|
+				| #[a(href='#{jv0}' title='Conditions') Terms &amp; Conditions]
+			+e.social
+				+social()
 
 
 
