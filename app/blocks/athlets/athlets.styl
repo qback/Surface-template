@@ -8,10 +8,12 @@
 
 	&__bg-wrapper
 		position absolute
-		z-index 25
 		top 0
 		bottom 0
 		width 100%
+
+		+above(480px)
+			z-index 25
 
 		+above(1560px)
 			left 50%
